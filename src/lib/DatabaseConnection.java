@@ -6,7 +6,8 @@ public class DatabaseConnection {
     private static final String URL = "jdbc:mysql://localhost:3306/atm_db";
     private static final String USER = "root";  
    
-    private static final String PASSWORD = "YOUR_PASSWORD_HERE";
+    // If the "DB_PASS" variable exists on your PC, use it. Otherwise, use "1234".
+    private static final String PASSWORD = System.getenv("DB_PASS") != null ? System.getenv("DB_PASS") : "1234";
 
     public static Connection getConnection()  {
        Connection connection = null;
