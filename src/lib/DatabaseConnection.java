@@ -6,7 +6,7 @@ public class DatabaseConnection {
     private static final String URL = "jdbc:mysql://localhost:3306/atm_db";
     private static final String USER = "root";  
    
-    private static final String PASSWORD = "NAZRAJAFAR.123";
+    private static final String PASSWORD = "YOUR_PASSWORD_HERE";
 
     public static Connection getConnection()  {
        Connection connection = null;
